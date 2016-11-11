@@ -1,1 +1,3 @@
-# solidity
+# Smart Contracts
+
+written in solidity.

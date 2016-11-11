@@ -31,4 +31,8 @@ contract Theater{
           }
       }
     }
+
+    function destroy(){
+        if (msg.sender == owner) suicide(owner);
+    }
 }

@@ -1,13 +1,13 @@
 pragma solidity ^0.4.0;
 
-contract Theater{
+contract TicketBooking{
 
   address public owner;
   mapping (address => uint) public balances;
   uint public totalSeats;
   uint public bookCount;
 
-  function Theater(){
+  function TicketBooking(){
     owner = msg.sender;
     totalSeats = 500;
     bookCount = 0;

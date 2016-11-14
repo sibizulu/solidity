@@ -25,7 +25,8 @@ contract Theater{
     if (balances[reciever] == amt){
       address contractAddress = this;
       if (contractAddress.balance >= amt) {
-        reciever.send(amt);
+        if(reciever.send(amt))
+        throw;
         balances[reciever] = 0;
         bookCount--;
       }
